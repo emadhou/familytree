@@ -1,0 +1,193 @@
+* {margin: 0; padding: 0; 
+    background-color: #b3b3bf;}
+    
+    .tree{
+        width: 2800px;
+        margin-left: 20px;
+        display: flex;
+    }
+    .tree ul {
+        padding-top: 20px; position: relative;
+    
+        transition: all 0.5s;
+        -webkit-transition: all 0.5s;
+        -moz-transition: all 0.5s;
+    }
+    
+    .tree li {
+        float: left; text-align: center;
+        list-style-type: none;
+        position: relative;
+        padding: 35px 5px 0px 5px;
+        
+        transition: all 0.5s;
+        -webkit-transition: all 0.5s;
+        -moz-transition: all 0.5s;
+    }
+    
+    
+    .tree li::before, .tree li::after{
+        content: '';
+        position: absolute; top: 0; right: 50%;
+        border-top: 1px solid #9d8eb1;
+        width: 50%; height: 34px;
+    }
+    .tree li::after{
+        right: auto; left: 50%;
+        border-left: 1px solid #9d8eb1;
+    }
+    
+    any siblings*/
+    .tree li:only-child::after, .tree li:only-child::before {
+        display: none;
+    }
+    
+    .tree li:only-child{ padding-top: 10px;}
+    
+    .tree li:first-child::before, .tree li:last-child::after{
+        border: 0 none;
+    }
+    .tree li:last-child::before{
+        border-right: 1px solid #9d8eb1;
+        border-radius: 0 5px 0 0;
+        -webkit-border-radius: 0 5px 0 0;
+        -moz-border-radius: 0 5px 0 0;
+    }
+    .tree li:first-child::after{
+        border-radius: 5px 0 0 0;
+        -webkit-border-radius: 5px 0 0 0;
+        -moz-border-radius: 5px 0 0 0;
+    }
+    
+    .tree ul ul::before{
+        content: '';
+        position: absolute; top: 0; left: 50%;
+        border-left: 1px solid #9d8eb1;
+        width: 0px; height: 20px;
+    }
+    
+    .tree li a{
+        border: 1px solid #000000;
+        padding: 5px 10px;
+        text-decoration: none;
+        color: #230153;
+        font-family: arial, verdana, tahoma;
+        font-size: 11px;
+        display: inline-block;
+        
+        border-radius: 5px;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        
+        transition: all 0.5s;
+        -webkit-transition: all 0.5s;
+        -moz-transition: all 0.5s;
+    }
+    .tree li .women {
+        color: #990866;
+    }
+    
+    .tree li a:hover, .tree li a:hover+ul li a {
+        background: #c8e4f8; color: #000; border: 1px solid #94a0b4;
+    }
+    .tree li a:hover+ul li::after, 
+    .tree li a:hover+ul li::before, 
+    .tree li a:hover+ul::before, 
+    .tree li a:hover+ul ul::before{
+        border-color:  #576c8e;
+    }
+    
+    .tree ul .opa{
+        font-size: 29px;
+    }
+    .tree .kinder   {
+        font-size: 20px;
+    }
+    .tree .sohn {
+        font-size: 13px;
+    }
+
+    .text{
+        display: inline-flex;
+
+    }
+
+    .chiled-1  {
+        width: 375px;
+        height: 200px;
+        border: solid black 1px;
+        margin: 10px 0 0 40px;
+    }
+    .chiled-2{
+        width: 154px;
+        height: 200px;
+        border: solid black 1px;
+        margin: 10px 0 0 35px;
+
+
+    }
+    .chiled-3{
+        width: 346px;
+        height: 200px;
+        border: solid black 1px;
+        margin: 10px 0 0 30px;
+
+
+    }
+    .chiled-4{
+        display: block;
+        width: 290px;
+        height: auto;
+        border: solid black 1px;
+        margin: 10px 0 0 30px;
+
+    }
+    .chiled-5{
+        width: 300px;
+        height: 200px;
+        border: solid black 1px;
+        margin: 10px 0 0 29px;
+
+
+    }
+    .chiled-6{
+        width: 247px;
+        height: 200px;
+        border: solid black 1px;
+        margin: 10px 0 0 29px;
+
+    }
+    .chiled-7{
+        width: 185px;
+        height: 200px;
+        border: solid black 1px;
+        margin: 10px 0 0 25px;
+    }
+    .chiled-8{
+        width: 140px;
+        height: 200px;
+        border: solid black 1px;
+        margin: 10px 0 0 25px;
+
+    }
+    .chiled-9{
+        width: 100px;
+        height: 200px;
+        border: solid black 1px;
+        margin: 10px 0 0 20px;
+
+    }
+    .chiled-10{
+        width: 100px;
+        height: 200px;
+        border: solid black 1px;
+        margin: 10px 0 0 15px;
+
+    }
+
+    img{
+        width: 150px;
+    }
+    .family{
+        width: 40%;
+    }

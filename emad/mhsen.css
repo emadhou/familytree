@@ -1,0 +1,14 @@
+*{
+    margin: 0; padding: 0;
+}
+
+.a{
+    height: 300px;
+    width: 50%;
+    border: solid 1px blue;
+
+}
+.contener{
+    display: flex;
+    width: 100%;
+}
